@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════
+   AUTOMOTIVE PRESTIGE — Luxury Dark Theme
+   ═══════════════════════════════════════ */
+
+/* ── ROOT ── */
+.root {
+    -fx-background-color: #0c0c0e;
+    -fx-font-family: "Segoe UI";
+}
+
+/* ══════════════════════════════
+   TABLE VIEW
+══════════════════════════════ */
+.table-view {
+    -fx-background-color: #0c0c0e;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: #1a1a1e;
+}
+
+/* Header general */
+.table-view .column-header-background {
+    -fx-background-color: #111114;
+    -fx-border-color: transparent transparent #c9a96e transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Cada columna del header */
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent #1e1e22 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #c9a96e;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 2px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 8;
+}
+
+/* Flecha de ordenamiento */
+.table-view .column-header .arrow {
+    -fx-background-color: #c9a96e;
+}
+
+/* Filas */
+.table-row-cell {
+    -fx-background-color: #0c0c0e;
+    -fx-border-color: transparent transparent #131316 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #0f0f12;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1e1a12;
+    -fx-border-color: transparent transparent transparent #c9a96e;
+    -fx-border-width: 0 0 0 2;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #141410;
+}
+
+/* Celdas */
+.table-cell {
+    -fx-text-fill: #d0d0cc;
+    -fx-font-size: 12px;
+    -fx-padding: 10 8 10 8;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #f5f0e8;
+}
+
+/* Columna ID en dorado */
+#colId .table-cell {
+    -fx-text-fill: #c9a96e;
+    -fx-font-weight: bold;
+}
+
+/* Esquina vacía */
+.table-view .filler {
+    -fx-background-color: #111114;
+}
+
+/* Scrollbar de la tabla */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: #111114;
+}
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #2a2a2e;
+    -fx-background-radius: 0;
+}
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #111114;
+}
+.table-view .scroll-bar .increment-button,
+.table-view .scroll-bar .decrement-button {
+    -fx-background-color: #111114;
+}
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar .decrement-arrow {
+    -fx-background-color: #3a3a3e;
+}
+
+/* ══════════════════════════════
+   TEXT FIELDS
+══════════════════════════════ */
+.text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f0ece4;
+    -fx-prompt-text-fill: #3a3a42;
+    -fx-highlight-fill: #c9a96e;
+    -fx-highlight-text-fill: #0c0c0e;
+}
+
+.text-field:focused {
+    -fx-border-color: #c9a96e;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* ══════════════════════════════
+   COMBOBOX
+══════════════════════════════ */
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: #2a2a2e;
+    -fx-border-width: 0 0 1 0;
+}
+
+.combo-box .cell,
+.combo-box-base .list-cell {
+    -fx-text-fill: #f0ece4;
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #c9a96e;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1a1a1e;
+    -fx-border-color: #c9a96e;
+    -fx-border-width: 1;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #d0d0cc;
+    -fx-background-color: transparent;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 12px;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #c9a96e;
+    -fx-text-fill: #0c0c0e;
+}
+
+/* ══════════════════════════════
+   SCROLL PANE (formulario)
+══════════════════════════════ */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 4px;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #2a2a2e;
+    -fx-background-radius: 0;
+}
+
+.scroll-pane .scroll-bar:vertical .track,
+.scroll-pane .scroll-bar:vertical .track-background {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+/* ══════════════════════════════
+   LABEL
+══════════════════════════════ */
+.label {
+    -fx-text-fill: #d0d0cc;
+}

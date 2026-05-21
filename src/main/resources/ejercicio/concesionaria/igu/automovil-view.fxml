@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="820.0" prefWidth="1280.0"
+            stylesheets="@automotive.css"
+            style="-fx-background-color: #0c0c0e;"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ejercicio.concesionaria.igu.HelloController">
+    <children>
+        <VBox spacing="0.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+
+                <!-- ═══════════════ HEADER ═══════════════ -->
+                <HBox alignment="CENTER_LEFT" prefHeight="80.0"
+                      style="-fx-background-color: #0c0c0e; -fx-border-color: transparent transparent #c9a96e transparent; -fx-border-width: 0 0 1 0;">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="16.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <StackPane prefWidth="48.0" prefHeight="48.0">
+                                    <children>
+                                        <Region prefWidth="32.0" prefHeight="32.0"
+                                                style="-fx-background-color: transparent; -fx-border-color: #c9a96e; -fx-border-width: 1.5; -fx-rotate: 45;" />
+                                        <Label text="A" style="-fx-text-fill: #c9a96e; -fx-font-size: 16px; -fx-font-weight: bold;" />
+                                    </children>
+                                </StackPane>
+                                <VBox spacing="4.0">
+                                    <children>
+                                        <Label text="AUTOMOTIVE PRESTIGE"
+                                               style="-fx-text-fill: #f0ece4; -fx-font-size: 19px; -fx-font-weight: bold; -fx-letter-spacing: 4px;" />
+                                        <HBox spacing="8.0" alignment="CENTER_LEFT">
+                                            <children>
+                                                <Region prefWidth="28.0" prefHeight="1.0"
+                                                        style="-fx-background-color: #c9a96e;" />
+                                                <Label text="COLLECTION MANAGEMENT SYSTEM"
+                                                       style="-fx-text-fill: #4a4a52; -fx-font-size: 9px; -fx-letter-spacing: 2px;" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <padding><Insets left="32.0" /></padding>
+                        </HBox>
+                        <VBox alignment="CENTER_RIGHT" spacing="3.0">
+                            <children>
+                                <Label text="SISTEMA DE GESTIÓN"
+                                       style="-fx-text-fill: #c9a96e; -fx-font-size: 9px; -fx-letter-spacing: 3px;" />
+                                <Label text="v 1.0"
+                                       style="-fx-text-fill: #3a3a42; -fx-font-size: 10px;" />
+                            </children>
+                            <padding><Insets right="32.0" /></padding>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <!-- ═══════════════ CUERPO ═══════════════ -->
+                <HBox spacing="0.0" VBox.vgrow="ALWAYS">
+                    <children>
+
+                        <!-- ────── PANEL IZQUIERDO: FORMULARIO ────── -->
+                        <VBox prefWidth="340.0" spacing="0.0"
+                              style="-fx-background-color: #111114; -fx-border-color: transparent #1e1e22 transparent transparent; -fx-border-width: 0 1 0 0;">
+
+                            <!-- Título -->
+                            <VBox spacing="4.0"
+                                  style="-fx-border-color: transparent transparent #1e1e22 transparent; -fx-border-width: 0 0 1 0;">
+                                <children>
+                                    <Label text="NUEVO VEHÍCULO"
+                                           style="-fx-text-fill: #c9a96e; -fx-font-size: 11px; -fx-letter-spacing: 3px; -fx-font-weight: bold;" />
+                                    <Label text="Complete los datos del vehículo"
+                                           style="-fx-text-fill: #4a4a52; -fx-font-size: 10px;" />
+                                </children>
+                                <padding><Insets bottom="18.0" left="28.0" right="28.0" top="22.0" /></padding>
+                            </VBox>
+
+                            <!-- Campos -->
+                            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                                <content>
+                                    <VBox spacing="22.0">
+                                        <children>
+
+                                            <!-- Patente -->
+                                            <VBox spacing="6.0">
+                                                <children>
+                                                    <Label text="PATENTE / PLACA"
+                                                           style="-fx-text-fill: #c9a96e; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                    <TextField fx:id="txtPatente" promptText="Ej: AB 123 CD"
+                                                               style="-fx-background-color: #1a1a1e; -fx-border-color: #c9a96e; -fx-border-width: 0 0 1.5 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #f0ece4; -fx-prompt-text-fill: #3a3a42; -fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 10 12 10 12; -fx-letter-spacing: 3px;" />
+                                                </children>
+                                            </VBox>
+
+                                            <Region prefHeight="1.0" maxWidth="Infinity"
+                                                    style="-fx-background-color: #1a1a1e;" />
+
+                                            <!-- Marca -->
+                                            <VBox spacing="6.0">
+                                                <children>
+                                                    <Label text="MARCA"
+                                                           style="-fx-text-fill: #7a7a82; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                    <TextField fx:id="txtMarca" promptText="Ej: Aston Martin"
+                                                               style="-fx-background-color: transparent; -fx-border-color: #2a2a32; -fx-border-width: 0 0 1 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #f0ece4; -fx-prompt-text-fill: #3a3a42; -fx-font-size: 13px; -fx-padding: 8 0 8 0;" />
+                                                </children>
+                                            </VBox>
+
+                                            <!-- Modelo -->
+                                            <VBox spacing="6.0">
+                                                <children>
+                                                    <Label text="MODELO"
+                                                           style="-fx-text-fill: #7a7a82; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                    <TextField fx:id="txtModelo" promptText="Ej: DB12"
+                                                               style="-fx-background-color: transparent; -fx-border-color: #2a2a32; -fx-border-width: 0 0 1 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #f0ece4; -fx-prompt-text-fill: #3a3a42; -fx-font-size: 13px; -fx-padding: 8 0 8 0;" />
+                                                </children>
+                                            </VBox>
+
+                                            <!-- Motor -->
+                                            <VBox spacing="6.0">
+                                                <children>
+                                                    <Label text="MOTOR"
+                                                           style="-fx-text-fill: #7a7a82; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                    <TextField fx:id="txtMotor" promptText="Ej: 4.0L V8 Biturbo"
+                                                               style="-fx-background-color: transparent; -fx-border-color: #2a2a32; -fx-border-width: 0 0 1 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #f0ece4; -fx-prompt-text-fill: #3a3a42; -fx-font-size: 13px; -fx-padding: 8 0 8 0;" />
+                                                </children>
+                                            </VBox>
+
+                                            <!-- Color y Puertas -->
+                                            <HBox spacing="20.0">
+                                                <children>
+                                                    <VBox spacing="6.0" HBox.hgrow="ALWAYS">
+                                                        <children>
+                                                            <Label text="COLOR"
+                                                                   style="-fx-text-fill: #7a7a82; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                            <TextField fx:id="txtColor" promptText="Ej: Midnight Black"
+                                                                       style="-fx-background-color: transparent; -fx-border-color: #2a2a32; -fx-border-width: 0 0 1 0; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #f0ece4; -fx-prompt-text-fill: #3a3a42; -fx-font-size: 13px; -fx-padding: 8 0 8 0;" />
+                                                        </children>
+                                                    </VBox>
+                                                    <VBox spacing="6.0" prefWidth="100.0">
+                                                        <children>
+                                                            <Label text="PUERTAS"
+                                                                   style="-fx-text-fill: #7a7a82; -fx-font-size: 9px; -fx-letter-spacing: 2px; -fx-font-weight: bold;" />
+                                                            <ComboBox fx:id="cmbPuertas" maxWidth="Infinity" />
+                                                        </children>
+                                                    </VBox>
+                                                </children>
+                                            </HBox>
+
+                                        </children>
+                                        <padding><Insets bottom="24.0" left="28.0" right="28.0" top="24.0" /></padding>
+                                    </VBox>
+                                </content>
+                            </ScrollPane>
+
+                            <!-- Botones -->
+                            <VBox spacing="10.0"
+                                  style="-fx-border-color: #1e1e22 transparent transparent transparent; -fx-border-width: 1 0 0 0;">
+                                <children>
+                                    <Button text="REGISTRAR VEHÍCULO" onAction="#btnGuardar"
+                                            maxWidth="Infinity" prefHeight="42.0"
+                                            style="-fx-background-color: #c9a96e; -fx-text-fill: #0c0c0e; -fx-font-weight: bold; -fx-font-size: 11px; -fx-letter-spacing: 2px; -fx-background-radius: 0; -fx-cursor: hand;" />
+                                    <Button text="LIMPIAR CAMPOS" onAction="#limpiarFormulario"
+                                            maxWidth="Infinity" prefHeight="36.0"
+                                            style="-fx-background-color: transparent; -fx-text-fill: #5a5a62; -fx-font-size: 10px; -fx-letter-spacing: 2px; -fx-background-radius: 0; -fx-border-color: #2a2a32; -fx-border-width: 1; -fx-cursor: hand;" />
+                                </children>
+                                <padding><Insets bottom="24.0" left="28.0" right="28.0" top="20.0" /></padding>
+                            </VBox>
+                        </VBox>
+
+                        <!-- ────── PANEL DERECHO: CATÁLOGO ────── -->
+                        <VBox spacing="0.0" HBox.hgrow="ALWAYS"
+                              style="-fx-background-color: #0c0c0e;">
+
+                            <!-- Título -->
+                            <HBox alignment="CENTER_LEFT"
+                                  style="-fx-border-color: transparent transparent #1e1e22 transparent; -fx-border-width: 0 0 1 0;">
+                                <children>
+                                    <VBox spacing="3.0" HBox.hgrow="ALWAYS">
+                                        <children>
+                                            <Label text="CATÁLOGO"
+                                                   style="-fx-text-fill: #c9a96e; -fx-font-size: 11px; -fx-letter-spacing: 3px; -fx-font-weight: bold;" />
+                                            <Label text="Inventario de vehículos disponibles"
+                                                   style="-fx-text-fill: #4a4a52; -fx-font-size: 10px;" />
+                                        </children>
+                                    </VBox>
+                                </children>
+                                <padding><Insets bottom="18.0" left="28.0" right="28.0" top="22.0" /></padding>
+                            </HBox>
+
+                            <!-- Tabla -->
+                            <TableView fx:id="tablaAutos" VBox.vgrow="ALWAYS">
+                                <columns>
+                                    <TableColumn fx:id="colId"      text="ID"       prefWidth="55.0"  />
+                                    <TableColumn fx:id="colPatente" text="PATENTE"  prefWidth="120.0" />
+                                    <TableColumn fx:id="colMarca"   text="MARCA"    prefWidth="130.0" />
+                                    <TableColumn fx:id="colModelo"  text="MODELO"   prefWidth="130.0" />
+                                    <TableColumn fx:id="colColor"   text="COLOR"    prefWidth="120.0" />
+                                    <TableColumn fx:id="colMotor"   text="MOTOR"    prefWidth="140.0" />
+                                    <TableColumn fx:id="colPuertas" text="PUERTAS"  prefWidth="80.0"  />
+                                </columns>
+                                <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                </columnResizePolicy>
+                                <padding><Insets left="12.0" right="12.0" top="4.0" /></padding>
+                            </TableView>
+
+                            <!-- Acciones -->
+                            <HBox spacing="12.0" alignment="CENTER_RIGHT"
+                                  style="-fx-border-color: #1e1e22 transparent transparent transparent; -fx-border-width: 1 0 0 0;">
+                                <children>
+                                    <Label text="Seleccioná un vehículo de la tabla para operar sobre él"
+                                           style="-fx-text-fill: #2a2a32; -fx-font-size: 10px; -fx-letter-spacing: 1px;" HBox.hgrow="ALWAYS" />
+                                    <Button text="  EDITAR  " onAction="#btnCargarDatosParaEditar"
+                                            prefHeight="38.0"
+                                            style="-fx-background-color: transparent; -fx-text-fill: #c9a96e; -fx-font-weight: bold; -fx-font-size: 10px; -fx-letter-spacing: 2px; -fx-border-color: #c9a96e; -fx-border-width: 1; -fx-background-radius: 0; -fx-cursor: hand;" />
+                                    <Button text="  ELIMINAR  " onAction="#btnEliminar"
+                                            prefHeight="38.0"
+                                            style="-fx-background-color: transparent; -fx-text-fill: #c0504a; -fx-font-weight: bold; -fx-font-size: 10px; -fx-letter-spacing: 2px; -fx-border-color: #5a2020; -fx-border-width: 1; -fx-background-radius: 0; -fx-cursor: hand;" />
+                                </children>
+                                <padding><Insets bottom="18.0" left="28.0" right="28.0" top="18.0" /></padding>
+                            </HBox>
+                        </VBox>
+
+                    </children>
+                </HBox>
+
+                <!-- ═══════════════ FOOTER ═══════════════ -->
+                <HBox alignment="CENTER_LEFT" prefHeight="28.0"
+                      style="-fx-background-color: #080808; -fx-border-color: #c9a96e transparent transparent transparent; -fx-border-width: 1 0 0 0;">
+                    <children>
+                        <Label text="AUTOMOTIVE PRESTIGE  ·  SISTEMA DE GESTIÓN  ·  2026"
+                               style="-fx-text-fill: #2a2a32; -fx-font-size: 9px; -fx-letter-spacing: 2px;" HBox.hgrow="ALWAYS" />
+                        <Label text="● SISTEMA ACTIVO"
+                               style="-fx-text-fill: #c9a96e; -fx-font-size: 9px; -fx-letter-spacing: 1px;" />
+                        <Region prefWidth="28.0" />
+                    </children>
+                    <padding><Insets left="28.0" /></padding>
+                </HBox>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
