@@ -9,7 +9,7 @@
             style="-fx-background-color: #0c0c0e;"
             xmlns="http://javafx.com/javafx/17.0.12"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ejercicio.concesionaria.igu.HelloController">
+            fx:controller="ejercicio.concesionaria.igu.ConcesionariaController">
     <children>
         <VBox spacing="0.0"
               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"

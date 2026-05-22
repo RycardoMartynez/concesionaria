@@ -2,7 +2,6 @@ package ejercicio.concesionaria.igu;
 
 import ejercicio.concesionaria.logica.Automovil;
 import ejercicio.concesionaria.logica.Controladora;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,7 +14,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class ConcesionariaController implements Initializable {
 
     @FXML private TextField txtPatente;
     @FXML private TextField txtMarca;
